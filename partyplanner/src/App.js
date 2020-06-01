@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React {Component} from 'react';
 import './App.css';
+
+class App extends Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      hamburger: 0,
+      hot_dog: 0, 
+      pizza: 0,
+      cake: 0,
+      chips: 0,
+      veggie: 0,
+      soda_bottle: 0,
+      plates: 0,
+      utensils: 0, 
+      cups: 0, 
+      napkins: 0, 
+      tables: 0,
+      chairs: 0,
+      guest_input: null,
+      space_input: null,
+    }
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
   );
 }
 
